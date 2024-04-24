@@ -163,10 +163,10 @@ const AdminScreen = ({ navigation }) => {
         <Card.Title>{day}'s Tasks</Card.Title>
 
         <Card.Divider />
-        <ScrollView width={'100%'} height={'60%'}>
+        <ScrollView width={'100%'} height={'90%'}>
           {tasks.map((t, index) => (
             <View key={index} style={{ justifyContent: 'space-between', }}>
-              <View style={{ flexDirection: 'row', justifyContent: 'space-around', }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', }}>
                 <Text>{t.day}</Text>
                 <Text>{t.task}</Text>
                 <AntDesign name='delete' size={24} color={'red'} onPress={() => deleteTask(t.id)} />
